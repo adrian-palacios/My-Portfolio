@@ -4,6 +4,13 @@ body{
     padding:0;
 }
 
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+
+}
+
 
 .switch{
     width:80px;
@@ -45,4 +52,18 @@ body{
 .dark .flicker {
     transform: translateX(40px);
     /* targets class dark with flicker child that applies transformation effect along horizontal axis */
+}
+
+.dark>*{
+    color:rgb(255, 255, 255);
+    /* if dark exist every child element with text turns white */
+}
+
+.main{
+    height:80vh;
+}
+
+.main-text{
+    width: 50%;
+    padding: 30px;
 }
